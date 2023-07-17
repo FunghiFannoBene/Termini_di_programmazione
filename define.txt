@@ -1,0 +1,21 @@
+The first line defines a macro named ADMIN. The second line uses the #ifndef directive to check if the ADMIN macro has been defined. If it has not been defined, then the code between the #ifndef and #endif directives will be included in the compiled code. In this case, the code that will be included is the loguser() function.
+
+The loguser() function is a function that logs the user who is currently logged into the system. This function is only necessary if the user is an administrator. By using the #ifndef directive, we can ensure that the loguser() function is only included in the compiled code if the user is an administrator.
+
+Here is an explanation of the code line by line:
+
+C
+#define ADMIN
+Utilizza il codice con cautela. Scopri di più
+This line defines a macro named ADMIN. The macro does not expand to any value, it is simply a placeholder.
+
+C
+#ifndef ADMIN
+loguser();
+#endif
+Utilizza il codice con cautela. Scopri di più
+This line uses the #ifndef directive to check if the ADMIN macro has been defined. If it has not been defined, then the code between the #ifndef and #endif directives will be included in the compiled code. In this case, the code that will be included is the loguser() function.
+
+The loguser() function is a function that logs the user who is currently logged into the system. This function is only necessary if the user is an administrator. By using the #ifndef directive, we can ensure that the loguser() function is only included in the compiled code if the user is an administrator.
+
+I hope this explanation is helpful. Let me know if you have any other questions.
