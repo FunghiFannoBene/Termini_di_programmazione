@@ -1,0 +1,5 @@
+Anche se la sintassi è corretta un errore semantico è ad esempio 
+1 l'uso di una variabile non inizializata
+2 division per 0
+e altri.
+Causano un errore semantico.
