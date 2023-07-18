@@ -1,0 +1,4 @@
+Math time: an 8-bit integer contains 8 bits. 28 is 256,
+so an 8-bit integer can hold 256 possible values. There are 256 possible values between -128 to 127, inclusive.
+
+7 bits are used to hold the magnitude of the number, and 1 bit is used to hold the sign.
