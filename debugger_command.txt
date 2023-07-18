@@ -1,0 +1,9 @@
+Set next statement
+
+There’s one more debugging command that’s used fairly uncommonly, but is still at least worth knowing about, 
+even if you won’t use it very often. The set next statement command allows us to change the point of execution 
+to some other statement (sometimes informally called jumping). This can be used to jump the point of execution
+forwards and skip some code that would otherwise execute, or backwards and have something that already executed run again.
+
+
+  run to cursor(right click) while debugger is running.
