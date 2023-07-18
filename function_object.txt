@@ -1,0 +1,3 @@
+Key insight
+
+With normal functions, we call function(object). With member functions, we call object.function().
