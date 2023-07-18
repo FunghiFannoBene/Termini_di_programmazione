@@ -1,0 +1,11 @@
+Dimensioni degli oggetti
+
+Come hai appreso nella lezione 4.1 -- Introduzione ai tipi di dati fondamentali, la memoria nelle macchine moderne è tipicamente organizzata in unità di dimensione di un byte, con ciascun byte di memoria che ha un indirizzo unico. Fino a questo punto, è stato utile pensare alla memoria come a una serie di caselle o caselle postali in cui possiamo inserire e recuperare informazioni, e alle variabili come nomi per accedere a queste caselle o caselle postali.
+
+Tuttavia, questa analogia non è del tutto corretta sotto un aspetto -- la maggior parte degli oggetti occupa effettivamente più di 1 byte di memoria. Un singolo oggetto può utilizzare 1, 2, 4, 8, o anche più indirizzi di memoria consecutivi. La quantità di memoria che un oggetto utilizza si basa sul suo tipo di dati.
+
+Poiché tipicamente accediamo alla memoria attraverso i nomi delle variabili (e non direttamente tramite gli indirizzi di memoria), il compilatore è in grado di nascondere i dettagli di quanti byte un dato oggetto utilizza. Quando accediamo ad una certa variabile x, il compilatore sa quanti byte di dati recuperare (in base al tipo di variabile x), e può gestire questo compito per noi.
+
+Tuttavia, ci sono diverse ragioni per cui è utile sapere quanta memoria un oggetto utilizza.
+
+Prima di tutto, più memoria un oggetto utilizza, più informazioni può contenere.
