@@ -1,0 +1,1 @@
+Refactor si riferisce a dividere la funzione in più funzioni, in modo che sia più facile da gestire e leggibile.
