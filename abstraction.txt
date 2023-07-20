@@ -1,0 +1,1 @@
+Hide complexity from users. AKA make thing simple to use
