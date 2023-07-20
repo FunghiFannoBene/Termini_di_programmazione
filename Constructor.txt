@@ -1,0 +1,8 @@
+Funzione che permette di costruire una classe, struttura con multipli dati.
+es: 
+build (data, data, data)
+{
+  x=data;
+  y=data;
+  z=data;
+}
