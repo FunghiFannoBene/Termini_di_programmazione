@@ -1,0 +1,16 @@
+La ragione per cui l'ordine sembra invertito rispetto a quello che potresti aspettarti (cioè {t, r, g, b}) ha a che fare con la rappresentazione dei numeri interi in memoria su un computer, chiamata endianness.
+
+Endianness descrive l'ordine in cui i byte di un numero intero vengono memorizzati in memoria. Ci sono due tipi principali di endianness:
+
+Big-endian: Il byte più significativo (MSB) è memorizzato all'indirizzo più basso.
+Little-endian: Il byte meno significativo (LSB) è memorizzato all'indirizzo più basso.
+Quando si memorizza un valore ARGB come un intero, il byte alpha (A o t nel tuo codice) è il byte più significativo, seguito dai byte rosso (R), verde (G) e blu (B) in quest'ordine. Tuttavia, su una macchina little-endian, questi byte vengono memorizzati in ordine inverso in memoria. Quindi, per creare un valore intero ARGB corretto, devi inserire i byte in ordine {b, g, r, t} quando li metti in un array.
+
+Va notato che l'endianness può variare tra diverse architetture di computer, quindi il codice che fa affidamento su un particolare endianness può non funzionare come previsto su tutte le macchine.
+Per esempio, le architetture Intel x86 e x86_64, che sono molto comuni nei PC, usano little endian. Questo significa che il byte meno significativo di un numero viene memorizzato all'indirizzo più basso in memoria.
+
+D'altra parte, alcune architetture più vecchie come Motorola 68000 (usato in vecchi computer Macintosh) usavano big endian. Anche alcune architetture moderne come IBM z/Architecture (usato nei mainframe) usano big endian.
+
+Alcune architetture, come ARM (usato in molti dispositivi mobili), Power (usato nei server), e MIPS (usato in alcuni sistemi embedded), possono funzionare sia in modalità big endian che in modalità little endian. Questo è spesso chiamato "endianness biassiale".
+
+Infine, va notato che la maggior parte dei protocolli di rete (come TCP/IP) usano big endian, che è spesso chiamato "network byte order". Quindi, quando si lavora con dati di rete, potrebbe essere necessario convertire tra big endian e little endian.
