@@ -1,0 +1,11 @@
+In hexadecimal notation, A is typically written in uppercase.
+  However, it's also common to see hexadecimal values written in lowercase, 
+  as in 0xa. Both 0xA and 0xa represent the same value, which is 10 in decimal.
+
+In programming languages such as C, C++, Java, and many others, 
+you can use either uppercase or lowercase letters when writing hexadecimal numbers. 
+  The language will interpret them as the same value.
+
+So, in summary:
+
+0xA = 0xa = 10 (in decimal) = 1010 (in binary)
