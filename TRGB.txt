@@ -1,0 +1,4 @@
+Color	TRGB representation
+red	0x00FF0000
+green	0x0000FF00
+blue	0x000000FF
