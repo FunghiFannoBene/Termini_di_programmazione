@@ -1,0 +1,1 @@
+webserver, detto anche hosting comunemente, permette di hostare siti web, di solito fornendo spazi virtuali ai clienti.
