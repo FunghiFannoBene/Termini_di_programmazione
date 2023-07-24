@@ -1,0 +1,2 @@
+Un servizio di container che tiene file binari
+consigliato: montare un sistema scratch
