@@ -1,0 +1,14 @@
+
+Un programma concorrente, a differenza di un programma sequenziale, è progettato per eseguire più attività o thread in modo simultaneo o parallelo. Questo approccio sfrutta i processori multi-core o multi-thread presenti nella maggior parte dei moderni computer per aumentare l'efficienza e ridurre i tempi di esecuzione.
+
+Nella maggior parte dei linguaggi di programmazione, ci sono diverse librerie o costrutti che consentono di creare programmi concorrenti e gestire i thread. Alcuni esempi includono:
+
+Thread nativi: Alcuni linguaggi di programmazione, come Java o C++, supportano thread nativi, che permettono di creare e gestire thread direttamente utilizzando le funzionalità offerte dalla libreria standard.
+
+Librerie per il threading: Molti linguaggi forniscono librerie specifiche per il threading, che semplificano la creazione e la gestione dei thread. Ad esempio, in Python ci sono le librerie threading e concurrent.futures che permettono di creare e gestire thread in modo efficiente.
+
+Paradigmi concorrenti: Alcuni linguaggi di programmazione offrono supporto per paradigmi concorrenti più avanzati, come ad esempio i meccanismi di attori (es. Erlang) o i canali di comunicazione tra processi (es. Go), che consentono di gestire la concorrenza in modo più sofisticato.
+
+Quando un programma concorrente viene eseguito, il sistema operativo si occupa di schedulare i thread sui diversi core della CPU, consentendo loro di eseguire contemporaneamente. Il numero di thread attivi dipende da vari fattori, tra cui il numero di core della CPU disponibili, la configurazione del sistema e la logica di concorrenza implementata nel programma.
+
+In definitiva, un programma concorrente è in grado di attivare più thread e farli eseguire in parallelo, sfruttando l'architettura multi-core o multi-thread del sistema, il che può portare a un aumento significativo delle prestazioni rispetto a un programma sequenziale.
