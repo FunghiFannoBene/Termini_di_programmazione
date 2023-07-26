@@ -1,0 +1,48 @@
+Il polimorfismo in C++ è uno dei concetti fondamentali della programmazione orientata agli oggetti (OOP). Si tratta di una tecnica che consente a una classe di assumere comportamenti diversi in base al contesto in cui viene utilizzata. Questo permette di scrivere codice più generico e flessibile, favorendo la riutilizzabilità del codice e la gestione più semplice di oggetti di tipo diverso.
+
+Esistono due tipi principali di polimorfismo in C++:
+
+Polimorfismo di tipo ("polimorfismo statico" o "polimorfismo a compilazione"): Si realizza attraverso l'uso di funzioni virtuali e classi base astratte (o interfacce). Le funzioni virtuali sono dichiarate nella classe base e possono essere implementate nelle classi derivate. Quando si utilizza un puntatore o un riferimento alla classe base per accedere a un oggetto derivato, C++ è in grado di chiamare correttamente la funzione appropriata in base al tipo effettivo dell'oggetto. Questo avviene a tempo di compilazione.
+Esempio:
+
+cpp
+Copy code
+class Forma {
+public:
+    virtual void disegna() const {
+        // Implementazione nella classe base
+    }
+};
+
+class Rettangolo : public Forma {
+public:
+    void disegna() const override {
+        // Implementazione specifica nella classe derivata Rettangolo
+    }
+};
+
+class Cerchio : public Forma {
+public:
+    void disegna() const override {
+        // Implementazione specifica nella classe derivata Cerchio
+    }
+};
+Save to grepper
+Polimorfismo di oggetti ("polimorfismo a esecuzione" o "polimorfismo dinamico"): Si realizza attraverso l'uso di puntatori o riferimenti alla classe base per gestire oggetti delle classi derivate. Questo tipo di polimorfismo consente di chiamare correttamente i metodi virtuali nelle classi derivate a tempo di esecuzione.
+Esempio:
+
+cpp
+Copy code
+void eseguiDisegno(const Forma& forma) {
+    forma.disegna(); // Il metodo disegna della classe appropriata sarà chiamato dinamicamente
+}
+
+int main() {
+    Rettangolo rett;
+    Cerchio cerchio;
+
+    eseguiDisegno(rett); // Chiamerà il metodo disegna di Rettangolo
+    eseguiDisegno(cerchio); // Chiamerà il metodo disegna di Cerchio
+}
+Save to grepper
+Il polimorfismo in C++ è una caratteristica potente che aiuta a creare gerarchie di classi ben organizzate e consente di scrivere codice più flessibile e mantenibile.
