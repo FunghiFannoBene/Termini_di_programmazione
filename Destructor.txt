@@ -1,0 +1,5 @@
+This is the destructor of the Zombie class. Destructors are special member functions that are called automatically 
+when an object of the class is destroyed or goes out of scope. The destructor is responsible for cleaning up resources 
+allocated to the object. The ~ symbol is used to define a destructor.
+In this case, the destructor doesn't take any parameters, and void is written in parentheses to indicate that it 
+doesn't take any arguments.
