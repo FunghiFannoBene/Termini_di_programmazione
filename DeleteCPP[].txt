@@ -1,0 +1,3 @@
+Yes, you are correct. The [] in delete[] indicates that the memory being deallocated is an array, and it is used to invoke the destructor for each element in the array before freeing the memory.
+
+In C++, when you use new[] to allocate an array of objects, the objects' constructors are called for each element in the array. Similarly, when you use delete[] to deallocate the array, the objects' destructors are called for each element before the memory is released.
