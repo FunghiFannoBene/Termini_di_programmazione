@@ -1,0 +1,16 @@
+Un mutex e un fork sono entrambi concetti di programmazione che possono essere utilizzati 
+per gestire la concorrenza e garantire una corretta esecuzione dei programmi.
+
+Un mutex, o mutual exclusion, è un meccanismo che permette di sincronizzare l'accesso
+a risorse condivise da parte di più processi o thread. Quando un processo o un thread acquisisce
+un mutex, nessun altro processo o thread può accedervi fino a quando il mutex non viene rilasciato. 
+Questo permette di evitare situazioni di race condition, in cui più processi o thread tentano di accedere 
+contemporaneamente a una risorsa condivisa, causando risultati imprevedibili o incorretti. Un mutex può essere
+visto come un'interruttore virtuale che può essere acceso o spento per controllare l'accesso a una risorsa.
+
+Il fork, invece, è una chiamata di sistema presente nei sistemi operativi che permette di creare un nuovo processo
+a partire da un processo esistente. Il processo chiamato "genitore" crea una copia di se stesso chiamata "figlio". 
+Il figlio eredita lo stato del genitore, inclusi i file aperti, le variabili, il codice e lo stack. Tuttavia,
+il figlio ha un suo spazio di indirizzamento separato dal genitore, quindi le modifiche fatte da uno non influenzano l'altro.
+Questo meccanismo permette di creare processi indipendenti che possono eseguire in parallelo e comunicare tra loro attraverso 
+la condivisione di risorse, come ad esempio la memoria condivisa o le pipe.
