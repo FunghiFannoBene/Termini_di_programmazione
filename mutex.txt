@@ -1,0 +1,20 @@
+Il concetto di mutex è basato sulla presenza di un'istruzione di lock nel processore per garantire l'
+  accesso esclusivo a una risorsa da parte di più thread o processi. 
+  Questa istruzione di lock blocca temporaneamente l'accesso alla risorsa da parte degli altri thread 
+  o processi, permettendo così a un solo thread o processo di accedervi alla volta.
+
+Se un processore non supporta l'istruzione di lock, allora non è possibile utilizzare il mutex per garantire 
+  l'accesso esclusivo. In questo caso, ci sono altre tecniche che possono essere utilizzate per ottenere 
+  una sincronizzazione sicura tra i thread o i processi.
+
+Una di queste tecniche è l'uso di variabili atomiche. Le variabili atomiche sono implementate in modo tale 
+che le operazioni su di esse vengono eseguite in modo atomico, ovvero senza possibilità di interferenza 
+da parte di altre operazioni. Questo garantisce un accesso sicuro alla risorsa condivisa.
+
+Un'altra tecnica che può essere utilizzata è il semaforo. Un semaforo è una variabile che tiene traccia 
+  del numero di risorse disponibili e fornisce l'accesso a tali risorse attraverso operazioni di wait e 
+signal. In questo modo, i thread o i processi possono richiedere l'accesso a una risorsa tramite un'operazione 
+  di wait e rilasciarla tramite un'operazione di signal.
+
+In conclusione, se un processore non supporta l'istruzione di lock, è possibile utilizzare altre tecniche come 
+variabili atomiche o semafori per ottenere una sincronizzazione sicura tra i thread o i processi.
