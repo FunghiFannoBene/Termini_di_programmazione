@@ -1,0 +1,4 @@
+void  *routine(void* t1)
+{
+  int t1id= *(int*)t1; // typecast ha la precedenza, diventa un int*t1 , ci accedi e ottieni l'int.
+}
