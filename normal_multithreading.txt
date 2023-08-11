@@ -1,0 +1,9 @@
+pthread
+
+pthread_mutex_init //creo dei mutex
+pthread_create //avvio il multithreading
+pthread_mutex_lock //mi riservo i  MIEI dati, se altri vogliono usare altri dati lo possono fare INSIEME alla mia esecuzione
+pthread_mutex_unlock //sblocco i MIEI DATI
+pthread_join //termino il mio thread
+pthread_mutex_destroy //distruggo i MUTEX
+free // libero.
