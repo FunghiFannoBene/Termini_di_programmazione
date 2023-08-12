@@ -1,0 +1,8 @@
+If your goal is to develop cross-platform software (e.g., a library or application meant to run natively on Windows, Linux, and macOS), 
+CMake might be your primary tool. It will help you manage builds across these platforms.
+
+If you're looking to ensure consistent behavior, deployment, or isolate your development environment, 
+then Docker will be more relevant.
+
+Combining Both: Many projects use both. For example, you might use CMake to handle cross-platform builds 
+and then package the built software in a Docker container for deployment or distribution.
