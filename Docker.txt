@@ -3,8 +3,42 @@ Image: Il pacco eseguibile del container, dalla stessa immagine puoi runnare pi√
 Container: l'esecuzione dell'image.
 Registry: Configurazioni gi√† pronte del docker //Docker hub per personalizzate
 
-docker pull "imagename" //downloads an image
-docker run -d "imagename" //runs an image then the container starts
-docker ps "imagename" //show containers actually running
-docker stop "ID" // stop container
-docker logs "ID" //show container info.
+docker pull "imagename o name" //downloads an image
+docker run -d "imagename o name" //runs an image then the container starts
+docker ps "imagename o name" //show containers actually running
+docker ps -a (all*)
+docker stop "ID o name" // stop container
+docker logs "ID o name" //show container info.
+
+ docker run -d -p 9000:80 nginx:latest // example on how to access port, 9000:bind to 80(nginx port); -p enambe port
+CONSIGLIO: meglio usare la stessa porta!! quindi 80.
+
+
+ docker run --name gigan -d -p 9000:80 nginx:latest
+
+BUILD application
+||||||||||| DOCKERFILE |||||||||||||||
+
+FROM node:19-alphine
+
+COPY package.json /app/ //package.json == src, /app/ == docker folder dst.
+COPY directory /app/
+
+WORKDIR /app
+
+RUN npm install
+
+CMD ["node", "server.js"]
+
+|||||||||||||
+
+docker build -t nodeapp:1.0 .
+
+docker build = costruisci
+-t = assegna un tag
+nodeapp:1.0 = nome e tag personalizzato
+. = questa cartella.
+
+||| RUN ||||
+
+docker run -d -p 3000:3000 nodeapp:0.1
