@@ -1,2 +1,10 @@
-Un servizio di container che tiene file binari
-consigliato: montare un sistema scratch
+serve per creare uno stato di virtualizzazione esclusiva all'applicazione di cui provede tutto il necessario per farlo funzionare.
+Image: Il pacco eseguibile del container, dalla stessa immagine puoi runnare più containers
+Container: l'esecuzione dell'image.
+Registry: Configurazioni già pronte del docker //Docker hub per personalizzate
+
+docker pull "imagename" //downloads an image
+docker run -d "imagename" //runs an image then the container starts
+docker ps "imagename" //show containers actually running
+docker stop "ID" // stop container
+docker logs "ID" //show container info.
