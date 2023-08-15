@@ -1,0 +1,13 @@
+$historyPath = (Get-PSReadlineOption).HistorySavePath
+Save to grepper
+You can then open this file in Notepad:
+
+powershell
+Copy code
+notepad.exe $historyPath
+Save to grepper
+Or display its contents in the PowerShell console:
+
+powershell
+Copy code
+Get-Content $historyPath
