@@ -1,0 +1,19 @@
+In the code:
+
+int main() {
+    int i = 5;
+    {
+        int i = 1;
+    }
+}
+Save to grepper
+There are two distinct int variables named i:
+
+The first i is declared in the scope of main(), and it's initialized with the value 5.
+The second i is declared inside the inner block {...} and is initialized with the value 1.
+The second i shadows the first i within its block. This means that if you try to use or 
+  modify the variable i inside the inner block, 
+  you'll be referring to the one that has the value 1, not the one with the value 5. 
+  However, once you exit the inner block, the original i with the value 5 is what you'll be referring to again.
+
+While this is valid C++ code, it can be a source of confusion and potential errors, especially in more complex programs. It's generally a good idea to avoid variable shadowing to maintain code clarity.
