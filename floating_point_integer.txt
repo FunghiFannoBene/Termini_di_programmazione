@@ -1,0 +1,24 @@
+Stranezze dei Floating Point: I programmatori spesso notano comportamenti inaspettati con i numeri floating point.
+Ad esempio, due numeri floating point che appaiono uguali potrebbero non essere considerati tali dall'operatore "==" in C.
+
+Illusione dei Floating Point: Anche se i numeri floating point sembrano numeri reali con decimali, la loro rappresentazione 
+interna è complessa e diversa dai numeri interi. Ad esempio, un numero floating point di 4 byte può rappresentare effettivamente 
+meno valori distinti rispetto a un intero di 4 byte.
+
+Precisione vs. Accuratezza:
+
+Gli interi sono accurati. Ad esempio, se hai l'intero "2", rappresenta esattamente il valore 2. Ma gli interi mancano di precisione; 
+non possono rappresentare parti frazionarie.
+I numeri floating point, d'altro canto, sono precisi ma possono mancare di accuratezza. Possono rappresentare numeri con parti frazionarie, 
+ma potrebbero non essere esattamente accurati a causa della loro rappresentazione interna.
+Analogia:
+
+Gli interi sono paragonati a mattoni: possono rappresentare perfettamente forme come cubi, ma non forme curve come sfere.
+I floating point sono come il "silly putty": possono modellare forme curve, ma potrebbero non formare perfettamente una forma target specifica.
+Limitazioni dei Floating Point: Non tutte le frazioni possono essere rappresentate esattamente in binario, mentre qualsiasi intero può. 
+Ad esempio, il numero 1/3 non può essere rappresentato esattamente come un numero decimale finito.
+
+L'autore conclude sottolineando l'importanza di capire come funzionano i numeri floating point per evitare errori e problemi comuni nella programmazione.
+
+
+
